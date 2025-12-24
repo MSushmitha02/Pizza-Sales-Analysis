@@ -25,11 +25,11 @@ Pizza sales analysis using SQL and Tableau to evaluate sales performance and cus
 
 ## Sample SQL Queries
 
--- Total Revenue
+-- Total Revenue:
 SELECT SUM(total_price) AS total_revenue
 FROM pizza_sales;
 
--- Weekly Orders Trend
+-- Weekly Orders Trend: 
 SELECT 
   DATEPART(iso_week, order_date) AS week_num,
   COUNT(DISTINCT order_id) AS total_orders
